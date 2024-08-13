@@ -82,11 +82,13 @@ lista = list(numero)
 print(lista)
 '''
 #7. Faça um programa que leia 5 números e informe o maior número.
+#
 lista = [1,4,7,9,5,56,3,44,65,66,66]
 maxlista = max(lista)
 print(maxlista)
 
 #8. Faça um programa que leia 5 números e informe a soma e a média dos números.
+#
 lista = [1,4,7,9,5,56,3,44,65,66,66]
 sumlista = sum(lista)
 print(sumlista)
@@ -94,17 +96,29 @@ avrlista = sum(lista) / len(lista)
 print(avrlista)
 
 #9. Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
-
+#
 numeros = range(1,51)
-
-
-
+impares = [numero for numero in numeros if numero % 2 !=0]
+print(impares)
 
 #10. Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+range_inical = 1
+range_final = 100
+intervalo = range(range_inical,range_final)
+for i in intervalo:
+    print(i)
+lista = list(intervalo)
+print(lista)
+
+#111. Altere o programa anterior para mostrar no final a soma dos números.
+
+for i in intervalo:
+    print(i)
+
+sum_lista = sum(list(intervalo))
+print(sum_lista)
 
 '''
-11. Altere o programa anterior para mostrar no final a soma dos números.
-
 12. Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
 
 Tabuada de 5:
